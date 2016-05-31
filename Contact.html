@@ -12,30 +12,72 @@
 </head>
 
 <body>
-    <div class="container">
+    <!--Nav menu-->
+    <div class="wrapper">
         <div class="row">
-            <form>
-                <div class="form-group">
-                    <label for="InputFirstName">First Name</label>
-                    <input type="text" class="form-control" id="FirstName" placeholder="Jane">
-                    <label for="Input:LastName">Last Name</label>
-                    <input type="text" class="form-control" id="InputLastName" placeholder="Jane">
+            <div class="column nav-side-menu col-lg-2 col-md-2 col-sm-3">
+                <div class="brand">Brand</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li>
+                            <a href="index.html">
+                                <i class="glyphicon glyphicon-user"></i> Profile
+                            </a>
+                        </li>
+                        <li data-toggle="collapse" data-target="#service" class="collapsed">
+                            <a href="Projects.html"><i class="fa fa-folder-o fa-lg"></i> Projects <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse" id="service">
+                            <li>Project 1</li>
+                            <li>Project 2</li>
+                            <li>Project 3</li>
+                        </ul>
+                        <li class="active">
+                            <a href="Contact.html">
+                                <i class="fa fa-phone fa-lg"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="form-group col-lg-6 col-md-6 col-sm-6">
-                    <label for="InputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="InputEmail1" placeholder="Email">
-                </div>
-                <div class="form-group col-lg-6 col-md-6 col-sm-6">
-                     <label for="InputPhone">Phone Number</label>
-                    <input type="text" class="form-control input-medium bfh-phone" id="InputPhone" data-country="US">
-                </div>
+            </div>
+            <!--/Nav menu end-->
+            <div class="container-fluid">
+                <div class="column col-lg-offset-2 col-md-offset-2 col-sm-offset-3" id="mainContent">
+                    <!--Page Content-->
+                    <div class="container col-lg-10 col-md-10 col-sm-10">
 
-                <textarea class="form-control" rows="3"></textarea>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
+                        <div class="page-header" id="customFont">
+                            <h1><i class="icon-box"></i> Contact<small></small></h1>
+                        </div>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="InputFirstName">First Name</label>
+                                <input type="text" class="form-control" id="FirstName" placeholder="Jane">
+                                <label for="Input:LastName">Last Name</label>
+                                <input type="text" class="form-control" id="InputLastName" placeholder="Jane">
+                            </div>
+                            <div class="form-group columne col-lg-6 col-md-6 col-sm-6">
+                                <label for="InputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="InputEmail1" placeholder="Email">
+                            </div>
+                            <div class="form-group column col-lg-6 col-md-6 col-sm-6">
+                                <label for="InputPhone">Phone Number</label>
+                                <input type="text" class="form-control input-medium bfh-phone" id="InputPhone" data-country="US">
+                            </div>
+                            <textarea class="form-control" rows="3"></textarea>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                    <!--/Page Content end-->
+                </div>
+            </div>
         </div>
     </div>
-
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/app.js"></script>
 </body>
 
 </html>
