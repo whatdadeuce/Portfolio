@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="Content/css/bootstrap.min.css">
     <link rel="stylesheet" href="Content/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="Content/css/font-awesome.min.css">
@@ -16,7 +16,7 @@
     <div class="wrapper">
         <div class="row">
             <div class="column nav-side-menu col-lg-2 col-md-2 col-sm-3">
-                <div class="brand">Brand</div>
+                <div class="brand"><img class="img-responsive hidden-xs"src="Assets/Logo.png" alt="Logo"><img id="smallLogo" class="hidden-lg hidden-md hidden-sm img-thumbnail" src="Assets/Logo.png" alt="Logo"> Kenneth</div>
                 <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
                 <div class="menu-list">
                     <ul id="menu-content" class="menu-content collapse out">
@@ -26,13 +26,8 @@
                             </a>
                         </li>
                         <li data-toggle="collapse" data-target="#service" class="collapsed">
-                            <a href="Projects.html"><i class="fa fa-folder-o fa-lg"></i> Projects <span class="arrow"></span></a>
+                            <a href="Projects.html"><i class="fa fa-folder-o fa-lg"></i> Projects</a>
                         </li>
-                        <ul class="sub-menu collapse" id="service">
-                            <li>Project 1</li>
-                            <li>Project 2</li>
-                            <li>Project 3</li>
-                        </ul>
                         <li class="active">
                             <a href="Contact.html">
                                 <i class="fa fa-phone fa-lg"></i> Contact
@@ -45,39 +40,47 @@
             <div class="container-fluid">
                 <div class="column col-lg-offset-2 col-md-offset-2 col-sm-offset-3" id="mainContent">
                     <!--Page Content-->
-                    <div class="container col-lg-10 col-md-10 col-sm-10">
-
-                        <div class="page-header" id="customFont">
-                            <h1><i class="icon-box"></i> Contact<small></small></h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-1 col-md-9 col-sm-9">
+                                <h1>Contact Me</h1>
+                                <form id="contactForm" action="" role="form">
+                                    <legend>Contact Form</legend>
+                                    <div class="form-group">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactNumber">Contact Number</label>
+                                        <input type="tel" class="form-control" id="contactNumber" placeholder="Enter Contact Number" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Your Message</label>
+                                        <textarea cols="3" rows="3" class="form-control" id="message" placeholder="Enter Your Message here..." required></textarea>
+                                    </div>
+                                    <div class="text-right">
+                                        <a id="cancelButton" href="index.html" class="btn btn-warning">Cancel</a>
+                                        <button id="sendButton" class="btn btn-primary">Send</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-
-                        <form>
-                            <div class="form-group">
-                                <label for="InputFirstName">First Name</label>
-                                <input type="text" class="form-control" id="FirstName" placeholder="Jane">
-                                <label for="Input:LastName">Last Name</label>
-                                <input type="text" class="form-control" id="InputLastName" placeholder="Jane">
-                            </div>
-                            <div class="form-group columne col-lg-6 col-md-6 col-sm-6">
-                                <label for="InputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="InputEmail1" placeholder="Email">
-                            </div>
-                            <div class="form-group column col-lg-6 col-md-6 col-sm-6">
-                                <label for="InputPhone">Phone Number</label>
-                                <input type="text" class="form-control input-medium bfh-phone" id="InputPhone" data-country="US">
-                            </div>
-                            <textarea class="form-control" rows="3"></textarea>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
+                        <!--/Page Content end-->
                     </div>
-                    <!--/Page Content end-->
                 </div>
             </div>
         </div>
-    </div>
-    <script src="Scripts/jquery-2.2.4.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/app.js"></script>
+        <script src="Scripts/jquery-2.2.4.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Scripts/app.js"></script>
 </body>
 
 </html>
