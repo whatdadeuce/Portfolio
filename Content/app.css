@@ -9,8 +9,12 @@ body {
     background-size: cover;
 }
 
-.panel {
+.panel{
     opacity: .8;
+}
+
+img{
+    opacity: 100;
 }
 
 @font-face {
