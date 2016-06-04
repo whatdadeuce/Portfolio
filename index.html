@@ -1,3 +1,13 @@
+<!--
+ * FileName: index.html
+ * 
+ * @author Kenneth Bato
+ * @date June 3, 2016
+ * 
+ * StudentID: 300448795
+ * website: kenportfolio.azurewebsites.net
+ * @description Home page
+-->
 <!doctype html>
 <html lang="en">
 
@@ -17,7 +27,8 @@
     <div class="wrapper">
         <div class="row">
             <div class="column nav-side-menu col-lg-2 col-md-2 col-sm-3">
-                <div class="brand"><img class="img-responsive hidden-xs"src="Assets/Logo.png" alt="Logo"><img id="smallLogo" class="hidden-lg hidden-md hidden-sm img-thumbnail" src="Assets/Logo.png" alt="Logo"> Kenneth</div>
+                <!--Responsive logo/brand to scale based on screen size. Dedicated fixed size for mobile screens -->
+                <div class="brand"><img class="img-responsive hidden-xs" src="Assets/Logo.png" alt="Logo"><img id="smallLogo" class="hidden-lg hidden-md hidden-sm" src="Assets/Logo.png" alt="Logo"> Kenneth's Portfolio</div>
                 <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
                 <div class="menu-list">
                     <ul id="menu-content" class="menu-content collapse out">
@@ -29,7 +40,6 @@
                         <li data-toggle="collapse" data-target="#service" class="collapsed">
                             <a href="Projects.html"><i class="fa fa-folder-o fa-lg"></i> Projects</a>
                         </li>
-                       
                         <li>
                             <a href="Contact.html">
                                 <i class="fa fa-phone fa-lg"></i> Contact
@@ -43,21 +53,22 @@
                 <div class="column col-lg-offset-2 col-md-offset-2 col-sm-offset-3" id="mainContent">
                     <!--Page Content-->
                     <div class="container-fluid">
-                        <div class="page-header" id="customFont">
-                            <h1><i class="icon-box"></i> Porfolio<small></small></h1>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-body" id="AboutMe">
-                                <!--About cone-->
+                        <div class="row">
+                            <div class="page-header" id="customFont">
+                                <h1>Profile</h1>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 hidden-xs">
-                        <img class="img-thumbnail" src="Assets/imgPanel1.jpg">
-                    </div>
-                    <div class="column col-lg-8 col-md-8 col-sm-6 col-xs-12">
-                        <div class="panel">
-                                <p id="personalStatement">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ducimus ipsam, ipsa aut amet voluptates, numquam incidunt aperiam? Vero quae voluptates alias delectus officia itaque dolore, ratione velit minima tenetur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quia dolorum temporibus enim officia praesentium ea architecto. Dolorem aut quisquam blanditiis placeat quia, minima ipsa culpa magnam, nesciunt harum perspiciatis?</p>
+                            <!--Profile image-->
+                            <div class="column col-lg-2 col-md-2 col-sm-2 col-xs-6 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-xs-offset-3">
+                                <img src="Assets/profile.png" class="img-thumbnail img-circle ">
+                            </div>
+                            <!--About Me information container/panel-->
+                            <div class="container col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                <div class="panel">
+                                    <div class="panel-body" id="aboutMe">
+                                        <!--About me content inserted here from javascript-->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!--/Page Content end-->
@@ -65,6 +76,7 @@
             </div>
         </div>
     </div>
+    <!--JavaScript Section-->
     <script src="Scripts/jquery-2.2.4.min.js "></script>
     <script src="Scripts/bootstrap.min.js "></script>
     <script src="Scripts/app.js "></script>

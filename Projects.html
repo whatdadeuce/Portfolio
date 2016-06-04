@@ -1,3 +1,14 @@
+
+<!--
+ * FileName: Projects.html
+ * 
+ * @author Kenneth Bato
+ * @date June 3, 2016
+ * 
+ * StudentID: 300448795
+ * website: kenportfolio.azurewebsites.net
+ * @description Projects html page
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +27,8 @@
     <div class="wrapper">
         <div class="row">
             <div class="column nav-side-menu col-lg-2 col-md-2 col-sm-3">
-                <div class="brand"><img class="img-responsive hidden-xs" src="Assets/Logo.png" alt="Logo"><img id="smallLogo" class="hidden-lg hidden-md hidden-sm img-thumbnail" src="Assets/Logo.png" alt="Logo"> Kenneth</div>
+                <!--Responsive logo/brand to scale based on screen size. Dedicated fixed size for mobile screens -->
+                <div class="brand"><img class="img-responsive hidden-xs" src="Assets/Logo.png" alt="Logo"><img id="smallLogo" class="hidden-lg hidden-md hidden-sm img-thumbnail" src="Assets/Logo.png" alt="Logo"> Kenneth's Portfolio</div>
                 <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
                 <div class="menu-list">
                     <ul id="menu-content" class="menu-content collapse out">
@@ -40,13 +52,14 @@
             <div class="container-fluid">
                 <div class="column col-lg-offset-2 col-md-offset-2 col-sm-offset-3" id="mainContent">
                     <!--Page Content-->
-                    <div class="container col-lg-10 col-md-10 col-sm-10">
-                        <div class="page-header" id="customFont">
-                            <h1><i class="icon-box"></i> Projects</h1>
+                    <div class="page-header" id="customFont">
+                            <h1>Projects</h1>
                         </div>
+                    <div class="container col-lg-10 col-md-10 col-sm-10">
+                        <!--Start of image carousel panel-->
                         <div class="panel" id="carouselPanel">
                             <div class="panel-heading">
-                                <p class="lead">Architectural Work</p>
+                                <h3>Architectural Work</h3>
                             </div>
                             <div id="carousel-id" class="carousel slide panel-body" data-ride="carousel">
                                 <ol class="carousel-indicators">
@@ -55,30 +68,30 @@
                                     <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
                                 </ol>
                                 <div class="carousel-inner">
+                                <!--First Image-->
                                     <div class="item">
                                         <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="Assets/Bakery.jpg">
                                         <div class="container">
-                                            <div class="carousel-caption">
-                                                <h1>Example headline.</h1>
-                                                <p id=""></p>
+                                            <div class="carousel-caption" id="projectDescBakery">
+                                               <!--Javascript content goes here--> 
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Second Image-->
                                     <div class="item">
                                         <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="Assets/Dairy.jpg">
                                         <div class="container">
-                                            <div class="carousel-caption">
-                                                <h1>Another example headline.</h1>
-                                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                            <div class="carousel-caption" id="projectDescDairy">
+                                               <!--Javascript content goes here-->
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Third Image active default-->
                                     <div class="item active">
                                         <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="Assets/Produce.jpg">
                                         <div class="container">
-                                            <div class="carousel-caption">
-                                                <h1>One more for good measure.</h1>
-                                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                            <div class="carousel-caption" id="projectDescProduce">
+                                                <!--Javascript content goes here-->
                                             </div>
                                         </div>
                                     </div>
@@ -87,12 +100,14 @@
                                 <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                             </div>
                         </div>
+                        <!--/End of image carousel panel-->
                     </div>
                     <!--/Page Content end-->
                 </div>
             </div>
         </div>
     </div>
+    <!--JavaScript Section-->
     <script src="Scripts/jquery-2.2.4.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/app.js"></script>

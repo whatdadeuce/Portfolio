@@ -1,3 +1,13 @@
+<!--
+ * FileName: Projects.html
+ * 
+ * @author Kenneth Bato
+ * @date June 3, 2016
+ * 
+ * StudentID: 300448795
+ * website: kenportfolio.azurewebsites.net
+ * @description Contact page
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +26,8 @@
     <div class="wrapper">
         <div class="row">
             <div class="column nav-side-menu col-lg-2 col-md-2 col-sm-3">
-                <div class="brand"><img class="img-responsive hidden-xs"src="Assets/Logo.png" alt="Logo"><img id="smallLogo" class="hidden-lg hidden-md hidden-sm img-thumbnail" src="Assets/Logo.png" alt="Logo"> Kenneth</div>
+                <!--Responsive logo/brand to scale based on screen size. Dedicated fixed size for mobile screens -->
+                <div class="brand"><img class="img-responsive hidden-xs" src="Assets/Logo.png" alt="Logo"><img id="smallLogo" class="hidden-lg hidden-md hidden-sm img-thumbnail" src="Assets/Logo.png" alt="Logo"> Kenneth's Portfolio</div>
                 <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
                 <div class="menu-list">
                     <ul id="menu-content" class="menu-content collapse out">
@@ -40,12 +51,15 @@
             <div class="container-fluid">
                 <div class="column col-lg-offset-2 col-md-offset-2 col-sm-offset-3" id="mainContent">
                     <!--Page Content-->
+                    <div class="page-header" id="customFont">
+                        <h1>Contact Me</h1>
+                    </div>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-offset-1 col-md-9 col-sm-9">
-                                <h1>Contact Me</h1>
-                                <form id="contactForm" action="" role="form">
-                                    <legend>Contact Form</legend>
+                                <!--Form Header-->
+                                <!--Form starts. Action set to return to index page upon submission of form-->
+                                <form id="contactForm" action="index.html" role="form">
                                     <div class="form-group">
                                         <label for="firstName">First Name</label>
                                         <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
@@ -56,11 +70,11 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                                        <input type="email" class="form-control" id="email" placeholder="sample@gmail.com" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="contactNumber">Contact Number</label>
-                                        <input type="tel" class="form-control" id="contactNumber" placeholder="Enter Contact Number" required>
+                                        <input type="tel" class="form-control" id="contactNumber" placeholder="(123) 123-4567" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="message">Your Message</label>
@@ -78,6 +92,7 @@
                 </div>
             </div>
         </div>
+        <!--JavaScript Section-->
         <script src="Scripts/jquery-2.2.4.min.js"></script>
         <script src="Scripts/bootstrap.min.js"></script>
         <script src="Scripts/app.js"></script>
